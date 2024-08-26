@@ -13,7 +13,7 @@ import { useState } from "react";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import Visibility from "@mui/icons-material/Visibility";
 
-export const SingIn = () => {
+export const SingUp = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -26,11 +26,11 @@ export const SingIn = () => {
   return (
     <>
       <img
-        src="/images/background-singin.svg"
+        src="/images/background-singup.svg"
         style={{
           position: "absolute",
           height: "100%",
-          width: '100%',
+          width: "100%",
           objectFit: "cover",
         }}
       />
@@ -52,7 +52,7 @@ export const SingIn = () => {
           gap={2}
         >
           <Typography fontSize={20} align="center">
-            Acesse sua conta
+            Crie sua conta
           </Typography>
 
           <FormControl
@@ -94,18 +94,18 @@ export const SingIn = () => {
             variant="contained"
             sx={{ textTransform: "none", marginBottom: 1 }}
           >
-            Entrar
+            Cadastrar
           </Button>
 
           <Typography textAlign={"center"} fontSize={12}>
-            Não poussui conta,{" "}
+            Já poussui conta,{" "}
             <Link
-              href="/singup"
+              href="/"
               fontSize={"bold"}
               color={"secondary"}
               sx={{ cursor: "pointer", fontWeight: "bold" }}
             >
-              Clique aqui
+              Entrar
             </Link>
           </Typography>
         </Grid>
