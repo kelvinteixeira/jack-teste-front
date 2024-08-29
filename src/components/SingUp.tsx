@@ -26,7 +26,7 @@ export const SingUp = () => {
   return (
     <>
       <img
-        src="/images/background-singup.svg"
+        src="/images/bg-singup.svg"
         style={{
           position: "absolute",
           height: "100%",
@@ -100,7 +100,7 @@ export const SingUp = () => {
           <Typography textAlign={"center"} fontSize={12}>
             Já poussui conta,{" "}
             <Link
-              href="/"
+              href="/singin"
               fontSize={"bold"}
               color={"secondary"}
               sx={{ cursor: "pointer", fontWeight: "bold" }}

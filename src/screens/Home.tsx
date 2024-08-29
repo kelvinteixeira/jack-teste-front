@@ -23,47 +23,40 @@ export const Home = () => {
           }}
         />
         <Grid item xs={8}>
-          <Grid container justifyContent={"center"}>
+          <Grid container justifyContent={"center"} marginBottom={10}>
             <img
               src="/images/task-manager-logo.png"
-              style={{ width: 150, height: 150, borderRadius: 100 }}
+              style={{ width: 300, height: 300, borderRadius: "100%" }}
             />
           </Grid>
-          <Typography fontSize={35} align="center">
-            As vezes tudo que você mais precisa é mantes as coisas no lugares
-            certos!{" "}
+          <Typography fontSize={35} align="center" marginBottom={2}>
+            As vezes, o que você mais precisa é manter as tarefas em ordem!{" "}
+          </Typography>
+          <Typography fontSize={20} align="center" marginBottom={10}>
+            Chegou a hora de organizar suas tarefas, definir novas metas e objetivos e manter sua vida sob controle.{" "}
           </Typography>
           <Grid container justifyContent={"space-around"} alignItems={"center"}>
-            <Grid container item xs={4} className="glass" padding={3}>
-              <ul>
-                <li>
-                  <Typography fontSize={18}>Organize suas tarefas</Typography>
-                </li>
-                <li>
-                  <Typography fontSize={18}>Defina suas metas</Typography>
-                </li>
-                <li>
-                  <Typography fontSize={18}>Faça novos objetivos</Typography>
-                </li>
-                <li>
-                  <Typography fontSize={18}>Controle sua vida</Typography>
-                </li>
-              </ul>
+           
+            <Grid item xs={3}>
+              <Button
+                fullWidth
+                sx={{ height: 70, textTransform: "none", borderRadius: 4 }}
+                variant="contained"
+                onClick={() => navigate("/singup")}
+              >
+                Teste gratuitamente
+              </Button>
             </Grid>
-            <Button
-              sx={{ height: 70, textTransform: "none", borderRadius: 4 }}
-              variant="contained"
-              onClick={() => navigate("/singup")}
-            >
-              Teste gratuitamente
-            </Button>
-            <Button
-              sx={{ height: 70, textTransform: "none", borderRadius: 4 }}
-              variant="contained"
-              onClick={() => navigate("/singin")}
-            >
-              Entrar na sua conta
-            </Button>
+            <Grid item xs={3}>
+              <Button
+              fullWidth
+                sx={{ height: 70, textTransform: "none", borderRadius: 4 }}
+                variant="contained"
+                onClick={() => navigate("/singin")}
+              >
+                Entrar na sua conta
+              </Button>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>

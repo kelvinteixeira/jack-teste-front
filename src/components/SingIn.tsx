@@ -26,7 +26,7 @@ export const SingIn = () => {
   return (
     <>
       <img
-        src="/images/background-singin.svg"
+        src="/images/bg-singin.svg"
         style={{
           position: "absolute",
           height: "100%",
